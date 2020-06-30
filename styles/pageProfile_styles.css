@@ -1,0 +1,386 @@
+/* Основные настройки */
+* {
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: Tahoma, Geneva, Verdana, Helvetica, Arial, sans-serif;
+    align-items: center;
+    text-align: center;
+    background: #fafafa;
+}
+
+.profile__body_background_white_border {
+    border-radius: 5px;
+    background: white;
+}
+
+    /* Центрирование всего контента и его растяжка */
+.main_limits {
+    min-width: 740px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Шапка */
+.header_disp_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_background-color {
+    background-color: #304573;
+}
+
+.header_size {
+    height: 32px;
+}
+
+.header__status-text {
+    color: white;
+    padding-left: 16px;
+}
+
+.header__options_disp_grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-column-gap: 6px;
+
+}
+
+.header__edit {
+    font-size: 12px;
+    color: #6d87bf;
+}
+
+.header__profile-photo_size {
+    width: 24px;
+    height: 24px;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.header__profile-photo-img_size {
+    width: 24px;
+    height: 34px;
+}
+
+.header__swipe-menu_size {
+    height: 19px;
+}
+
+.header__swipe-menu_position {
+    margin-right: 16px;
+    margin-left: 2px;
+}
+
+/* Главный контент */
+.profile_disp_grid {
+    display: grid;
+    grid-template-columns: 480px 260px;
+    justify-content: center;
+}
+
+    /* Настройка всего текста, в основном текста, который нельзя менять */
+.profile__text {
+    font-size: 12px;
+    color: grey;
+}
+
+    /* Текст, который можно менять */
+.profile__text-changed {
+    color: black;
+}
+
+/* Настройка левого контента: Информация, галерея, Новости */
+.profile__about-gallery-news_disp_grid {
+    display: grid;
+    grid-template-rows: minmax(auto, 220px) 128px auto;
+}
+
+    /* Положения текста в Информации */
+.profile__about-text_margin {
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+    /* Настройка Информации о пользователе */
+.profile__about_disp_flex {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.profile__about_position {
+    margin-top: 5px;
+}
+
+.profile__name-surname {
+    font-size: 18px;
+    color: black;
+}
+
+.profile__status {
+    width: 460px;
+    height: 30px;
+}
+
+.profile__status-word-changed {
+    color: black;
+    text-align: left;
+}
+
+.profile__information_disp_grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 140px auto;
+    justify-items: flex-start;
+    align-items: flex-end;
+}
+
+.profile__button-hide {
+    color: cornflowerblue;
+}
+
+.profile__button-hide_hover:hover {
+    content: '';
+    cursor: pointer;
+}
+
+.profile__button-hide_size {
+    width: 116px;
+}
+
+.profile__button-hide-this_disp_grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 140px auto;
+    justify-items: flex-start;
+    align-items: flex-end;
+}
+
+    /* Настройка галереи */
+.profile__gallery_disp_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+}
+
+.profile__gallery-img_hover:hover {
+    content: '';
+    cursor: pointer;
+}
+
+.profile__gallery_position {
+    margin-top: 5px;
+}
+
+.profile__gallery-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* Настройка правого элемента: Аватарка, Взаимодействия, Сообщения */
+.profile__photo-stuff-dialogues_disp_grid {
+    display: grid;
+    grid-template-rows: 360px auto auto;
+    grid-template-columns: 260px;
+    justify-items: center;
+    align-items: center;
+}
+
+    /* Настройка Аватарки */
+.profile__photo_disp_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__photo_size {
+    height: 350px;
+    width: 250px;
+}
+
+.profile__photo-img_size {
+    width: 240px;
+    height: 340px;
+}
+
+    /* Настройка Взаимодействий (кнопки видео и т.д.)*/
+.profile__stuff_disp_grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 5px;
+}
+
+.profile__stuff_size {
+    width: 250px;
+}
+
+.profile__stuff_padding {
+    padding-top: 10px;
+}
+
+.profile__stuff_card_disp_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.profile__stuff-text {
+    font-size: 12px;
+    color: #496899;
+    width: 70px;
+    height: 28px;
+}
+
+.profile__stuff-icon-img {
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+}
+
+.profile__stuff-img_disp_flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.profile__stuff-img_size {
+    width: 45px;
+    height: 45px;
+}
+
+.profile__stuff-img-border-line {
+    border-radius: 40px;
+    border: 1px solid #cbd1f7;
+}
+
+    /* Настройка сообщений */
+.profile__dialogues_disp_flex {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.profile__dialogues_size {
+    width: 250px;
+}
+
+.profile__dialogues_margin {
+    margin-top: 5px;
+}
+
+.profile__dialogues-header_disp_flex {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.profile__dialogues-header-name_position {
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.profile__dialogues-messages_disp_flex{
+    max-height: 180px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.profile__dialogues-friend_disp_grid {
+    display: grid;
+    grid-template-columns: 1px  36px auto;
+}
+
+.profile__dialogues-friend_line_before:before {
+    content: '';
+    position: relative;
+    width: 240px;
+    height: 1px;
+    background: #dadae6;
+    margin-left: 5px;
+}
+
+.profile__dialogues-friend_size {
+    min-height: 50px;
+    max-height: 63px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.profile__dialogues-friend-photo_size {
+    width: 24px;
+    height: 24px;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.profile__dialogues-friend-margin {
+    margin-top: 6px;
+}
+
+.profile__dialogues-friend-photo_position {
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+.profile__dialogues-friend-photo-img_size {
+    width: 24px;
+    height: 34px;
+}
+
+.profile__dialogues-friend-information_disp_grid {
+    display: grid;
+    grid-template-rows: 18px auto;
+}
+
+.profile__dialogues-friend-information_size {
+    width: 96%;
+}
+
+.profile__dialogues-friend-header_disp_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile__dialogues-friend-who {
+    color: #496899;
+}
+
+.profile__dialogues-friend-last-time {
+    font-size: 10px;
+}
+
+.profile__dialogues-friend-message {
+    white-space: normal;
+    color: black;
+    max-height: 45px;
+    text-align: left;
+}

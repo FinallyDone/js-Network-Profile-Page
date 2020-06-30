@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <link href="styles/pageProfile_styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script data-main="scripts/main" src="scripts/require.js"></script>
+</head>
+
+<body>
+    <!-- Весь контент и его центрирование -->
+    <div class="main_limits">
+        <!-- Шапка -->
+        <header class="header header_disp_flex header_background-color header_size">
+            <div class="header__status header__status-text">В сети</div>
+            <div class="header__options header__options_disp_grid">
+                <span class="header__edit">Редактировать</span>
+                <div class="header__profile-photo header__profile-photo_size">
+                    <img class="header__profile-photo-img header__profile-photo-img_size" src="img/Users/id1/Personal/user_photo.png" alt="img" />
+                </div>
+                <img class="header__swipe-menu header__swipe-menu_size header__swipe-menu_position" src="img/icons/dots.png" alt="img" />
+            </div>
+        </header>
+        <!-- Информация о пользователе -->
+        <div class="profile profile_disp_grid profile__text">
+            <div class="profile__about-gallery-news profile__about-gallery-news_disp_grid">
+                <div class="profile__about profile__about_disp_flex profile__about_position profile__body_background_white_border">
+                    <span class="profile__name-surname profile__about-text_margin">Иванова Ангелина</span>
+                    <div class="profile__status profile__about-text_margin">
+                        <div class="profile__status-word-changed">Дружелюбная и романтичная девушка. Я сентиментальна и не приемлю ложь. Люблю дождь и книги.</div>
+                    </div>
+                    <div class="profile__information profile__information_disp_grid">
+                        <span class="profile__birthday-word profile__about-text_margin">День рождения</span>
+                        <div class="profile__birthday-changed profile__birthday-changed_disp_flex">
+                            <span class="profile__birthday-word-changed  profile__text-changed">12 апреля, 24 года</span>
+                            <img class="profile__icon-zodiac" src="" alt="img">
+                        </div>
+                        <span class="profile__city-word profile__about-text_margin">Город</span>
+                        <span class="profile__city-word-changed profile__text-changed">Уфа</span>
+                        <span class="profile__marital-status-word profile__about-text_margin">Семейное положение</span>
+                        <span class="profile__marital-status-word-changed profile__text-changed">Ищу тебя</span>
+                    </div>
+                    <!-- Кнопка скрыть подробности -->
+                    <span class="profile__button-hide profile__button-hide_hover profile__about-text_margin profile__button-hide_size">Скрыть подробности</span>
+                    <div class="profile__button-hide-this profile__button-hide-this_disp_grid">
+                        <span class="profile__education-word profile__about-text_margin">Образование:</span>
+                        <span class="profile__education-word-changed profile__text-changed">БГУ 2003</span>
+                        <span class="profile__work-place-word profile__about-text_margin">Место работы:</span>
+                        <span class="profile__work-place-word-changed profile__text-changed">Как и место встречи, изменить нельзя</span>
+                    </div>
+                </div>
+                <!-- Галерея -->
+                <div class="profile__gallery profile__gallery_disp_grid profile__body_background_white_border profile__gallery_position">
+                    <img class="profile__gallery-img profile__gallery-img_hover" src="img/Users/id1/Personal/1.jpg" alt="img">
+                    <img class="profile__gallery-img profile__gallery-img_hover" src="img/Users/id1/Personal/2.jpg" alt="img">
+                    <img class="profile__gallery-img profile__gallery-img_hover" src="img/Users/id1/Personal/3.jpg" alt="img">
+                    <img class="profile__gallery-img profile__gallery-img_hover" src="img/Users/id1/Personal/4.jpg" alt="img">
+                </div>
+                <!--  -->
+                <div class="profile__news profile__news_disp_flex">
+
+                </div>
+            </div>
+            <!-- Элемент справа в body в нем: Аватарка, Взаимодействи, Сообщения -->
+            <div class="profile__photo-stuff-dialogues profile__photo-stuff-dialogues_disp_grid">
+                <!-- Аватарка пользователя -->
+                <div class="profile__photo profile__photo_disp_flex profile__photo_size profile__body_background_white_border">
+                    <img class="profile__photo-img_size" src="img/Users/id1/Personal/user_photo.png" alt="img">
+                </div>
+                <!-- Взаимодействие - подписчики, интересное, друзья, видео, фотки, музыка -->
+                <div class="profile__stuff profile__stuff_disp_grid profile__body_background_white_border profile__stuff_size profile__stuff_padding">
+                    <div class="profile__favorites profile__stuff_card_disp_flex">
+                        <div class="profile__stuff-img profile__stuff-img_disp_flex profile__stuff-img-border-line profile__stuff-img_size">
+                            <img class="profile__favorites-img  profile__stuff-icon-img" src="img/icons/fav.png" alt="img">
+                        </div>
+                        <span class="profile__favorites-word profile__stuff-text">Поклонники</span>
+                    </div>
+                    <div class="profile__interesting  profile__stuff_card_disp_flex">
+                        <div class="profile__stuff-img profile__stuff-img_disp_flex profile__stuff-img-border-line profile__stuff-img_size">
+                            <img class="profile__interesting-img profile__stuff-icon-img" src="img/icons/int.png" alt="img">
+                        </div>
+                        <span class="profile__interesting-word profile__stuff-text">Интересное</span>
+                    </div>
+                    <div class="profile__friends  profile__stuff_card_disp_flex">
+                        <div class="profile__stuff-img profile__stuff-img_disp_flex profile__stuff-img-border-line profile__stuff-img_size">
+                            <img class="profile__friends-img profile__stuff-icon-img" src="img/icons/friends.png" alt="img">
+                        </div>
+                        <span class="profile__friends-word profile__stuff-text">Друзья Товарищи</span>
+                    </div>
+                    <div class="profile__videos profile__stuff_card_disp_flex">
+                        <div class="profile__stuff-img profile__stuff-img_disp_flex profile__stuff-img-border-line profile__stuff-img_size">
+                            <img class="profile__videos-img profile__stuff-icon-img" src="img/icons/video.png" alt="img">
+                        </div>
+                        <span class="profile__videos-word profile__stuff-text">Видосы</span>
+                    </div>
+                    <div class="profile__photos profile__stuff_card_disp_flex">
+                        <div class="profile__stuff-img profile__stuff-img_disp_flex profile__stuff-img-border-line profile__stuff-img_size">
+                            <img class="profile__photos-img profile__stuff-icon-img" src="img/icons/photo.png" alt="img">
+                        </div>
+                        <span class="profile__photos-word profile__stuff-text">Фотки</span>
+                    </div>
+                    <div class="profile__music profile__stuff_card_disp_flex">
+                        <div class="profile__stuff-img profile__stuff-img_disp_flex profile__stuff-img-border-line profile__stuff-img_size">
+                            <img class="profile__Music-img profile__stuff-icon-img" src="img/icons/music.png" alt="img">
+                        </div>
+                        <span class="profile__music-word profile__stuff-text">Музыка</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
